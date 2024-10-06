@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+		
+		
+        function calendario(json) { 
+
+            
+            function isOdd(num) { return num % 2;}
+
+            function sortJSON(arr, key, asc) {
+                return arr.sort((a, b) => {
+                    let x = a[key];
+                    let y = b[key];
+                    if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+                    else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+                });
+                }
+
+                output = sortJSON(json.partidos, "numero", true);
+
+            output.forEach(function (element, i) { 
+                
+                //console.log(element.Home.TeamName[0].Description)
+                
+
+                if(isOdd(i)){
+                const utcDate = element.fecha;
+
+                const date = new Date(utcDate);
+                const date2 = new Date('nov 20 2022');
+                console.log(date2);
+                // console.log(date);
+
+                // console.log(date.toLocaleString());
+
+                card = `<div class="mundial-row">
+                    
+                    <div class="equipo">
+                        
+                        <div>
+                            <img src="img/${element.local.abreviacion}.webp" style="float: left;">
+                            <span style="float: left;">${element.local.nombre}:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                        <div>
+                            <img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+                            <span style="float: left;">${element.visitante.nombre}:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                    </div>
+                    <div class="fecha">${date.toLocaleString([], {day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric',hour12: true })}</div>
+                </div>
+                                `;
+
+
+
+                    document.getElementById("col2").innerHTML += card
+                            }else{
+
+                                const utcDate = element.fecha;
+
+                const date = new Date(utcDate);
+
+                // console.log(date);
+
+                // console.log(date.toLocaleString());
+
+                card = `<div class="mundial-row">
+                    
+                    <div class="equipo">
+                        
+                        <div>
+                            <img src="img/${element.local.abreviacion}.webp" style="float: left;">
+                            <span style="float: left;">${element.local.nombre}:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                        <div>
+                            <img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+                            <span style="float: left;">${element.visitante.nombre}:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                    </div>
+                    <div class="fecha">${date.toLocaleString([], {day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric',hour12: true })}</div>
+                </div>`;
+
+
+
+                    document.getElementById("col1").innerHTML += card
+
+                            }
+
+                            console.log(element.local)
+            })
+
+        
+        }
+        fetch("./json/partidos.json") 
+        .then(response => response.json()) .then(json => {
+             
+                calendario(json)
+            })
+    </script>
+</head>
+
+<body>
+
+    
+
+    
+    <div class="mundial">
+        <div class="mundial-tabs">
+            <div class="tab">Tab1</div>
+            <div class="tab">Tab2</div>
+        </div>
+        <div class="mundial-container">
+            <div id="col1" class="mundial-col">
+                <div class="mundial-row">
+                    <div class="equipo">
+                        <div>
+                            <img src="img/CMR.webp" style="float: left;">
+                            <span style="float: left;">Equipo 1:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                        <div>
+                            <img src="img/BRA.webp" style="float: left;">
+                            <span style="float: left;">Equipo 2:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                    </div>
+                    <div class="fecha">20/11/2022, 11:00 a. m.</div>
+                </div>
+                <div class="mundial-row">
+                    <div class="equipo">
+                        <div>
+                            <img src="img/CMR.webp" style="float: left;">
+                            <span style="float: left;">Equipo 1:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                        <div>
+                            <img src="img/BRA.webp" style="float: left;">
+                            <span style="float: left;">Equipo 2:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                    </div>
+                    <div class="fecha">20/11/2022, 11:00 a. m.</div>
+                </div>
+                <div class="mundial-row">
+                    <div class="equipo">
+                        <div>
+                            <img src="img/CMR.webp" style="float: left;">
+                            <span style="float: left;">Equipo 1:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                        <div>
+                            <img src="img/BRA.webp" style="float: left;">
+                            <span style="float: left;">Equipo 2:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                    </div>
+                    <div class="fecha">20/11/2022, 11:00 a. m.</div>
+                </div>
+            </div>
+            <div id="col2" class="mundial-col">
+                <div class="mundial-row">
+                    <div class="equipo">
+                        <div>
+                            <img src="img/CMR.webp" style="float: left;">
+                            <span style="float: left;">Equipo 1:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                        <div>
+                            <img src="img/BRA.webp" style="float: left;">
+                            <span style="float: left;">Equipo 2:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                    </div>
+                    <div class="fecha">20/11/2022, 11:00 a. m.</div>
+                </div>
+                <div class="mundial-row">
+                    <div class="equipo">
+                        <div>
+                            <img src="img/CMR.webp" style="float: left;">
+                            <span style="float: left;">Equipo 1:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                        <div>
+                            <img src="img/BRA.webp" style="float: left;">
+                            <span style="float: left;">Equipo 2:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                    </div>
+                    <div class="fecha">20/11/2022, 11:00 a. m.</div>
+                </div>
+                <div class="mundial-row">
+                    <div class="equipo">
+                        <div>
+                            <img src="img/CMR.webp" style="float: left;">
+                            <span style="float: left;">Equipo 1:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                        <div>
+                            <img src="img/BRA.webp" style="float: left;">
+                            <span style="float: left;">Equipo 2:</span>
+                            <span style="float: right;">0</span>
+                        </div>
+                    </div>
+                    <div class="fecha">20/11/2022, 11:00 a. m.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

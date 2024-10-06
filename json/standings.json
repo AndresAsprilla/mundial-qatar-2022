@@ -1,0 +1,402 @@
+{
+    "A": [
+        {
+            "nombre": "Catar",
+            "abreviacion": "QAT",
+            "jugados": "3",
+            "ganados": "0",
+            "empatados": "0",
+            "perdidos": "3",
+            "diferencia": "-6",
+            "puntos": "0",
+            "gf": "1",
+            "gc": "7"
+        },
+        {
+            "nombre": "Ecuador",
+            "abreviacion": "ECU",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "1",
+            "puntos": "4",
+            "gf": "4",
+            "gc": "3"
+        },
+        {
+            "nombre": "Senegal",
+            "abreviacion": "SEN",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "0",
+            "perdidos": "1",
+            "diferencia": "1",
+            "puntos": "6",
+            "gf": "5",
+            "gc": "4"
+        },
+        {
+            "nombre": "Pa\u00edses Bajos",
+            "abreviacion": "NED",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "1",
+            "perdidos": "0",
+            "diferencia": "4",
+            "puntos": "7",
+            "gf": "5",
+            "gc": "1"
+        }
+    ],
+    "B": [
+        {
+            "nombre": "Inglaterra",
+            "abreviacion": "ENG",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "1",
+            "perdidos": "0",
+            "diferencia": "7",
+            "puntos": "7",
+            "gf": "9",
+            "gc": "2"
+        },
+        {
+            "nombre": "Ir\u00e1n",
+            "abreviacion": "IRN",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "0",
+            "perdidos": "2",
+            "diferencia": "-3",
+            "puntos": "3",
+            "gf": "4",
+            "gc": "7"
+        },
+        {
+            "nombre": "Estados Unidos",
+            "abreviacion": "USA",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "2",
+            "perdidos": "0",
+            "diferencia": "1",
+            "puntos": "5",
+            "gf": "2",
+            "gc": "1"
+        },
+        {
+            "nombre": "Gales",
+            "abreviacion": "WAL",
+            "jugados": "3",
+            "ganados": "0",
+            "empatados": "1",
+            "perdidos": "2",
+            "diferencia": "-5",
+            "puntos": "1",
+            "gf": "1",
+            "gc": "6"
+        }
+    ],
+    "C": [
+        {
+            "nombre": "Argentina",
+            "abreviacion": "ARG",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "0",
+            "perdidos": "1",
+            "diferencia": "3",
+            "puntos": "6",
+            "gf": "5",
+            "gc": "2"
+        },
+        {
+            "nombre": "Arabia Saud\u00ed",
+            "abreviacion": "KSA",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "0",
+            "perdidos": "2",
+            "diferencia": "-2",
+            "puntos": "3",
+            "gf": "3",
+            "gc": "5"
+        },
+        {
+            "nombre": "M\u00e9xico",
+            "abreviacion": "MEX",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "-1",
+            "puntos": "4",
+            "gf": "2",
+            "gc": "3"
+        },
+        {
+            "nombre": "Polonia",
+            "abreviacion": "POL",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "0",
+            "puntos": "4",
+            "gf": "2",
+            "gc": "2"
+        }
+    ],
+    "D": [
+        {
+            "nombre": "Francia",
+            "abreviacion": "FRA",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "0",
+            "perdidos": "1",
+            "diferencia": "3",
+            "puntos": "6",
+            "gf": "6",
+            "gc": "3"
+        },
+        {
+            "nombre": "Australia",
+            "abreviacion": "AUS",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "0",
+            "perdidos": "1",
+            "diferencia": "-1",
+            "puntos": "6",
+            "gf": "3",
+            "gc": "4"
+        },
+        {
+            "nombre": "Dinamarca",
+            "abreviacion": "DEN",
+            "jugados": "3",
+            "ganados": "0",
+            "empatados": "1",
+            "perdidos": "2",
+            "diferencia": "-2",
+            "puntos": "1",
+            "gf": "1",
+            "gc": "3"
+        },
+        {
+            "nombre": "T\u00fanez",
+            "abreviacion": "TUN",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "0",
+            "puntos": "4",
+            "gf": "1",
+            "gc": "1"
+        }
+    ],
+    "E": [
+        {
+            "nombre": "Espa\u00f1a",
+            "abreviacion": "ESP",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "6",
+            "puntos": "4",
+            "gf": "9",
+            "gc": "3"
+        },
+        {
+            "nombre": "Costa Rica",
+            "abreviacion": "CRC",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "0",
+            "perdidos": "2",
+            "diferencia": "-8",
+            "puntos": "3",
+            "gf": "3",
+            "gc": "11"
+        },
+        {
+            "nombre": "Alemania",
+            "abreviacion": "GER",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "1",
+            "puntos": "4",
+            "gf": "6",
+            "gc": "5"
+        },
+        {
+            "nombre": "Jap\u00f3n",
+            "abreviacion": "JPN",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "0",
+            "perdidos": "1",
+            "diferencia": "1",
+            "puntos": "6",
+            "gf": "4",
+            "gc": "3"
+        }
+    ],
+    "F": [
+        {
+            "nombre": "Marruecos",
+            "abreviacion": "MAR",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "1",
+            "perdidos": "0",
+            "diferencia": "3",
+            "puntos": "7",
+            "gf": "4",
+            "gc": "1"
+        },
+        {
+            "nombre": "Croacia",
+            "abreviacion": "CRO",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "2",
+            "perdidos": "0",
+            "diferencia": "3",
+            "puntos": "5",
+            "gf": "4",
+            "gc": "1"
+        },
+        {
+            "nombre": "B\u00e9lgica",
+            "abreviacion": "BEL",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "-1",
+            "puntos": "4",
+            "gf": "1",
+            "gc": "2"
+        },
+        {
+            "nombre": "Canad\u00e1",
+            "abreviacion": "CAN",
+            "jugados": "3",
+            "ganados": "0",
+            "empatados": "0",
+            "perdidos": "3",
+            "diferencia": "-5",
+            "puntos": "0",
+            "gf": "1",
+            "gc": "6"
+        }
+    ],
+    "G": [
+        {
+            "nombre": "Brasil",
+            "abreviacion": "BRA",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "0",
+            "perdidos": "1",
+            "diferencia": "2",
+            "puntos": "6",
+            "gf": "3",
+            "gc": "1"
+        },
+        {
+            "nombre": "Serbia",
+            "abreviacion": "SRB",
+            "jugados": "3",
+            "ganados": "0",
+            "empatados": "1",
+            "perdidos": "2",
+            "diferencia": "-3",
+            "puntos": "1",
+            "gf": "5",
+            "gc": "8"
+        },
+        {
+            "nombre": "Suiza",
+            "abreviacion": "SUI",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "0",
+            "perdidos": "1",
+            "diferencia": "1",
+            "puntos": "6",
+            "gf": "4",
+            "gc": "3"
+        },
+        {
+            "nombre": "Camer\u00fan",
+            "abreviacion": "CMR",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "0",
+            "puntos": "4",
+            "gf": "4",
+            "gc": "4"
+        }
+    ],
+    "H": [
+        {
+            "nombre": "Uruguay",
+            "abreviacion": "URU",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "0",
+            "puntos": "4",
+            "gf": "2",
+            "gc": "2"
+        },
+        {
+            "nombre": "Rep\u00fablica de Corea",
+            "abreviacion": "KOR",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "1",
+            "perdidos": "1",
+            "diferencia": "0",
+            "puntos": "4",
+            "gf": "4",
+            "gc": "4"
+        },
+        {
+            "nombre": "Portugal",
+            "abreviacion": "POR",
+            "jugados": "3",
+            "ganados": "2",
+            "empatados": "0",
+            "perdidos": "1",
+            "diferencia": "2",
+            "puntos": "6",
+            "gf": "6",
+            "gc": "4"
+        },
+        {
+            "nombre": "Ghana",
+            "abreviacion": "GHA",
+            "jugados": "3",
+            "ganados": "1",
+            "empatados": "0",
+            "perdidos": "2",
+            "diferencia": "-2",
+            "puntos": "3",
+            "gf": "5",
+            "gc": "7"
+        }
+    ]
+}

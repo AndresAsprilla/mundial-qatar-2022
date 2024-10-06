@@ -1,0 +1,1524 @@
+{
+    "partidos": [
+        {
+            "fecha": "2022-11-20T16:00:00Z",
+            "numero": 1,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Catar",
+                "abreviacion": "QAT"
+            },
+            "visitante": {
+                "nombre": "Ecuador",
+                "abreviacion": "ECU"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-21T13:00:00Z",
+            "numero": 3,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Inglaterra",
+                "abreviacion": "ENG"
+            },
+            "visitante": {
+                "nombre": "Ir\u00e1n",
+                "abreviacion": "IRN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 6,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-21T16:00:00Z",
+            "numero": 2,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Senegal",
+                "abreviacion": "SEN"
+            },
+            "visitante": {
+                "nombre": "Pa\u00edses Bajos",
+                "abreviacion": "NED"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-21T19:00:00Z",
+            "numero": 4,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Estados Unidos",
+                "abreviacion": "USA"
+            },
+            "visitante": {
+                "nombre": "Gales",
+                "abreviacion": "WAL"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-22T10:00:00Z",
+            "numero": 8,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Argentina",
+                "abreviacion": "ARG"
+            },
+            "visitante": {
+                "nombre": "Arabia Saud\u00ed",
+                "abreviacion": "KSA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-22T13:00:00Z",
+            "numero": 6,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Dinamarca",
+                "abreviacion": "DEN"
+            },
+            "visitante": {
+                "nombre": "T\u00fanez",
+                "abreviacion": "TUN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-22T16:00:00Z",
+            "numero": 7,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "M\u00e9xico",
+                "abreviacion": "MEX"
+            },
+            "visitante": {
+                "nombre": "Polonia",
+                "abreviacion": "POL"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-22T19:00:00Z",
+            "numero": 5,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Francia",
+                "abreviacion": "FRA"
+            },
+            "visitante": {
+                "nombre": "Australia",
+                "abreviacion": "AUS"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 4,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-23T10:00:00Z",
+            "numero": 12,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Marruecos",
+                "abreviacion": "MAR"
+            },
+            "visitante": {
+                "nombre": "Croacia",
+                "abreviacion": "CRO"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-23T13:00:00Z",
+            "numero": 11,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Alemania",
+                "abreviacion": "GER"
+            },
+            "visitante": {
+                "nombre": "Jap\u00f3n",
+                "abreviacion": "JPN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-23T16:00:00Z",
+            "numero": 10,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Espa\u00f1a",
+                "abreviacion": "ESP"
+            },
+            "visitante": {
+                "nombre": "Costa Rica",
+                "abreviacion": "CRC"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 7,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-23T19:00:00Z",
+            "numero": 9,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "B\u00e9lgica",
+                "abreviacion": "BEL"
+            },
+            "visitante": {
+                "nombre": "Canad\u00e1",
+                "abreviacion": "CAN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-24T10:00:00Z",
+            "numero": 13,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Suiza",
+                "abreviacion": "SUI"
+            },
+            "visitante": {
+                "nombre": "Camer\u00fan",
+                "abreviacion": "CMR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-24T13:00:00Z",
+            "numero": 14,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Uruguay",
+                "abreviacion": "URU"
+            },
+            "visitante": {
+                "nombre": "Rep\u00fablica de Corea",
+                "abreviacion": "KOR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-24T16:00:00Z",
+            "numero": 15,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Portugal",
+                "abreviacion": "POR"
+            },
+            "visitante": {
+                "nombre": "Ghana",
+                "abreviacion": "GHA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 3,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-24T19:00:00Z",
+            "numero": 16,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Brasil",
+                "abreviacion": "BRA"
+            },
+            "visitante": {
+                "nombre": "Serbia",
+                "abreviacion": "SRB"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-25T10:00:00Z",
+            "numero": 17,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Gales",
+                "abreviacion": "WAL"
+            },
+            "visitante": {
+                "nombre": "Ir\u00e1n",
+                "abreviacion": "IRN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-25T13:00:00Z",
+            "numero": 18,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Catar",
+                "abreviacion": "QAT"
+            },
+            "visitante": {
+                "nombre": "Senegal",
+                "abreviacion": "SEN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 3
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-25T16:00:00Z",
+            "numero": 19,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Pa\u00edses Bajos",
+                "abreviacion": "NED"
+            },
+            "visitante": {
+                "nombre": "Ecuador",
+                "abreviacion": "ECU"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-25T19:00:00Z",
+            "numero": 20,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Inglaterra",
+                "abreviacion": "ENG"
+            },
+            "visitante": {
+                "nombre": "Estados Unidos",
+                "abreviacion": "USA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-26T10:00:00Z",
+            "numero": 21,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "T\u00fanez",
+                "abreviacion": "TUN"
+            },
+            "visitante": {
+                "nombre": "Australia",
+                "abreviacion": "AUS"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-26T13:00:00Z",
+            "numero": 22,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Polonia",
+                "abreviacion": "POL"
+            },
+            "visitante": {
+                "nombre": "Arabia Saud\u00ed",
+                "abreviacion": "KSA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-26T16:00:00Z",
+            "numero": 23,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Francia",
+                "abreviacion": "FRA"
+            },
+            "visitante": {
+                "nombre": "Dinamarca",
+                "abreviacion": "DEN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-26T19:00:00Z",
+            "numero": 24,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Argentina",
+                "abreviacion": "ARG"
+            },
+            "visitante": {
+                "nombre": "M\u00e9xico",
+                "abreviacion": "MEX"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-27T10:00:00Z",
+            "numero": 25,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Jap\u00f3n",
+                "abreviacion": "JPN"
+            },
+            "visitante": {
+                "nombre": "Costa Rica",
+                "abreviacion": "CRC"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-27T13:00:00Z",
+            "numero": 26,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "B\u00e9lgica",
+                "abreviacion": "BEL"
+            },
+            "visitante": {
+                "nombre": "Marruecos",
+                "abreviacion": "MAR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-27T16:00:00Z",
+            "numero": 27,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Croacia",
+                "abreviacion": "CRO"
+            },
+            "visitante": {
+                "nombre": "Canad\u00e1",
+                "abreviacion": "CAN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 4,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-27T19:00:00Z",
+            "numero": 28,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Espa\u00f1a",
+                "abreviacion": "ESP"
+            },
+            "visitante": {
+                "nombre": "Alemania",
+                "abreviacion": "GER"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-28T10:00:00Z",
+            "numero": 29,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Camer\u00fan",
+                "abreviacion": "CMR"
+            },
+            "visitante": {
+                "nombre": "Serbia",
+                "abreviacion": "SRB"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 3,
+                "visitante": 3
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-28T13:00:00Z",
+            "numero": 30,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Rep\u00fablica de Corea",
+                "abreviacion": "KOR"
+            },
+            "visitante": {
+                "nombre": "Ghana",
+                "abreviacion": "GHA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 3
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-28T16:00:00Z",
+            "numero": 31,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Brasil",
+                "abreviacion": "BRA"
+            },
+            "visitante": {
+                "nombre": "Suiza",
+                "abreviacion": "SUI"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-28T19:00:00Z",
+            "numero": 32,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Portugal",
+                "abreviacion": "POR"
+            },
+            "visitante": {
+                "nombre": "Uruguay",
+                "abreviacion": "URU"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-29T15:00:00Z",
+            "numero": 36,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Pa\u00edses Bajos",
+                "abreviacion": "NED"
+            },
+            "visitante": {
+                "nombre": "Catar",
+                "abreviacion": "QAT"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-29T15:00:00Z",
+            "numero": 35,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Ecuador",
+                "abreviacion": "ECU"
+            },
+            "visitante": {
+                "nombre": "Senegal",
+                "abreviacion": "SEN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-29T19:00:00Z",
+            "numero": 33,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Gales",
+                "abreviacion": "WAL"
+            },
+            "visitante": {
+                "nombre": "Inglaterra",
+                "abreviacion": "ENG"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 3
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-29T19:00:00Z",
+            "numero": 34,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Ir\u00e1n",
+                "abreviacion": "IRN"
+            },
+            "visitante": {
+                "nombre": "Estados Unidos",
+                "abreviacion": "USA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-30T15:00:00Z",
+            "numero": 37,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Australia",
+                "abreviacion": "AUS"
+            },
+            "visitante": {
+                "nombre": "Dinamarca",
+                "abreviacion": "DEN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-30T15:00:00Z",
+            "numero": 38,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "T\u00fanez",
+                "abreviacion": "TUN"
+            },
+            "visitante": {
+                "nombre": "Francia",
+                "abreviacion": "FRA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-11-30T19:00:00Z",
+            "numero": 39,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Polonia",
+                "abreviacion": "POL"
+            },
+            "visitante": {
+                "nombre": "Argentina",
+                "abreviacion": "ARG"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-11-30T19:00:00Z",
+            "numero": 40,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Arabia Saud\u00ed",
+                "abreviacion": "KSA"
+            },
+            "visitante": {
+                "nombre": "M\u00e9xico",
+                "abreviacion": "MEX"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-01T15:00:00Z",
+            "numero": 41,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Croacia",
+                "abreviacion": "CRO"
+            },
+            "visitante": {
+                "nombre": "B\u00e9lgica",
+                "abreviacion": "BEL"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-01T15:00:00Z",
+            "numero": 42,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Canad\u00e1",
+                "abreviacion": "CAN"
+            },
+            "visitante": {
+                "nombre": "Marruecos",
+                "abreviacion": "MAR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-01T19:00:00Z",
+            "numero": 43,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Jap\u00f3n",
+                "abreviacion": "JPN"
+            },
+            "visitante": {
+                "nombre": "Espa\u00f1a",
+                "abreviacion": "ESP"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-12-01T19:00:00Z",
+            "numero": 44,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Costa Rica",
+                "abreviacion": "CRC"
+            },
+            "visitante": {
+                "nombre": "Alemania",
+                "abreviacion": "GER"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 4
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-02T15:00:00Z",
+            "numero": 45,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Ghana",
+                "abreviacion": "GHA"
+            },
+            "visitante": {
+                "nombre": "Uruguay",
+                "abreviacion": "URU"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-12-02T15:00:00Z",
+            "numero": 46,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Rep\u00fablica de Corea",
+                "abreviacion": "KOR"
+            },
+            "visitante": {
+                "nombre": "Portugal",
+                "abreviacion": "POR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-02T19:00:00Z",
+            "numero": 47,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Serbia",
+                "abreviacion": "SRB"
+            },
+            "visitante": {
+                "nombre": "Suiza",
+                "abreviacion": "SUI"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 3
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-12-02T19:00:00Z",
+            "numero": 48,
+            "fase": "Primera fase",
+            "local": {
+                "nombre": "Camer\u00fan",
+                "abreviacion": "CMR"
+            },
+            "visitante": {
+                "nombre": "Brasil",
+                "abreviacion": "BRA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-03T15:00:00Z",
+            "numero": 49,
+            "fase": "Octavos de final",
+            "local": {
+                "nombre": "Pa\u00edses Bajos",
+                "abreviacion": "NED"
+            },
+            "visitante": {
+                "nombre": "Estados Unidos",
+                "abreviacion": "USA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 3,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-03T19:00:00Z",
+            "numero": 50,
+            "fase": "Octavos de final",
+            "local": {
+                "nombre": "Argentina",
+                "abreviacion": "ARG"
+            },
+            "visitante": {
+                "nombre": "Australia",
+                "abreviacion": "AUS"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-04T15:00:00Z",
+            "numero": 52,
+            "fase": "Octavos de final",
+            "local": {
+                "nombre": "Francia",
+                "abreviacion": "FRA"
+            },
+            "visitante": {
+                "nombre": "Polonia",
+                "abreviacion": "POL"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 3,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-04T19:00:00Z",
+            "numero": 51,
+            "fase": "Octavos de final",
+            "local": {
+                "nombre": "Inglaterra",
+                "abreviacion": "ENG"
+            },
+            "visitante": {
+                "nombre": "Senegal",
+                "abreviacion": "SEN"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 3,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-05T15:00:00Z",
+            "numero": 53,
+            "fase": "Octavos de final",
+            "local": {
+                "nombre": "Jap\u00f3n",
+                "abreviacion": "JPN"
+            },
+            "visitante": {
+                "nombre": "Croacia",
+                "abreviacion": "CRO"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-05T19:00:00Z",
+            "numero": 54,
+            "fase": "Octavos de final",
+            "local": {
+                "nombre": "Brasil",
+                "abreviacion": "BRA"
+            },
+            "visitante": {
+                "nombre": "Rep\u00fablica de Corea",
+                "abreviacion": "KOR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 4,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-06T15:00:00Z",
+            "numero": 55,
+            "fase": "Octavos de final",
+            "local": {
+                "nombre": "Marruecos",
+                "abreviacion": "MAR"
+            },
+            "visitante": {
+                "nombre": "Espa\u00f1a",
+                "abreviacion": "ESP"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 0,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-06T19:00:00Z",
+            "numero": 56,
+            "fase": "Octavos de final",
+            "local": {
+                "nombre": "Portugal",
+                "abreviacion": "POR"
+            },
+            "visitante": {
+                "nombre": "Suiza",
+                "abreviacion": "SUI"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 6,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-09T15:00:00Z",
+            "numero": 58,
+            "fase": "Cuartos de final",
+            "local": {
+                "nombre": "Croacia",
+                "abreviacion": "CRO"
+            },
+            "visitante": {
+                "nombre": "Brasil",
+                "abreviacion": "BRA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-09T19:00:00Z",
+            "numero": 57,
+            "fase": "Cuartos de final",
+            "local": {
+                "nombre": "Pa\u00edses Bajos",
+                "abreviacion": "NED"
+            },
+            "visitante": {
+                "nombre": "Argentina",
+                "abreviacion": "ARG"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-10T15:00:00Z",
+            "numero": 60,
+            "fase": "Cuartos de final",
+            "local": {
+                "nombre": "Marruecos",
+                "abreviacion": "MAR"
+            },
+            "visitante": {
+                "nombre": "Portugal",
+                "abreviacion": "POR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-10T19:00:00Z",
+            "numero": 59,
+            "fase": "Cuartos de final",
+            "local": {
+                "nombre": "Inglaterra",
+                "abreviacion": "ENG"
+            },
+            "visitante": {
+                "nombre": "Francia",
+                "abreviacion": "FRA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 1,
+                "visitante": 2
+            },
+            "transmision": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "fecha": "2022-12-13T19:00:00Z",
+            "numero": 61,
+            "fase": "Semifinal",
+            "local": {
+                "nombre": "Argentina",
+                "abreviacion": "ARG"
+            },
+            "visitante": {
+                "nombre": "Croacia",
+                "abreviacion": "CRO"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 3,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-12-14T19:00:00Z",
+            "numero": 62,
+            "fase": "Semifinal",
+            "local": {
+                "nombre": "Francia",
+                "abreviacion": "FRA"
+            },
+            "visitante": {
+                "nombre": "Marruecos",
+                "abreviacion": "MAR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 0
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-12-17T15:00:00Z",
+            "numero": 63,
+            "fase": "Partido por el tercer puesto",
+            "local": {
+                "nombre": "Croacia",
+                "abreviacion": "CRO"
+            },
+            "visitante": {
+                "nombre": "Marruecos",
+                "abreviacion": "MAR"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 2,
+                "visitante": 1
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fecha": "2022-12-18T15:00:00Z",
+            "numero": 64,
+            "fase": "Final",
+            "local": {
+                "nombre": "Argentina",
+                "abreviacion": "ARG"
+            },
+            "visitante": {
+                "nombre": "Francia",
+                "abreviacion": "FRA"
+            },
+            "estado": 0,
+            "tiempo": "0'",
+            "marcador": {
+                "local": 3,
+                "visitante": 3
+            },
+            "transmision": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        }
+    ]
+}

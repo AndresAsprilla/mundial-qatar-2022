@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundial Qatar 2022</title>
+    <link rel="stylesheet" href="styles.min.css?ver=3.8" />
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: sans-serif;
+       }
+       body{
+           background: #f0f0f0;
+       }
+       .container{
+           width: 100%;
+           /* max-width: 700px; */
+           margin: auto;
+           /* margin-top: 100px; */
+       }
+       .lbl-menu{
+           background: #510b24;
+       }
+       .lbl-menu label{
+           display: inline-block;
+           padding: 20px;
+           color: #fff;
+           cursor: pointer;
+           transition: all 400ms ease;
+       }
+       .lbl-menu label:hover{
+           background: #772740;
+       }
+
+        .content {
+            position: relative;
+        }
+
+        .content .tab {
+            position: absolute;
+            line-height: 1.8;
+            transition: all 600ms ease;
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.90);
+            padding: 30px;
+            background: #fff;
+            padding-bottom: 40px;
+            width: 100%;
+        }
+
+
+        #radio1,
+        #radio2,
+        #radio3,
+        #radio4,
+        #radio5,
+        #radio6,
+        #radio7 {
+            display: none;
+        }
+
+        #radio1:checked~.tab1,
+        #radio2:checked~.tab2,
+        #radio3:checked~.tab3,
+        #radio4:checked~.tab4,
+        #radio5:checked~.tab5,
+        #radio6:checked~.tab6,
+        #radio7:checked~.tab7 {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+
+        .content .tab2:after {
+            left: 122px;
+        }
+
+        .content .tab3:after {
+            left: 210px;
+        }
+
+        .content .tab4:after {
+            left: 303px;
+        }
+
+        table {
+  border-collapse: collapse;
+  width: 96%;
+}
+
+th {
+  text-align: left;
+  padding: 3px;
+}
+    </style>
+
+    <script>
+
+
+        function calendario(json) {
+
+
+            function isOdd(num) { return num % 2; }
+
+function sortJSON(arr, key, asc) {
+    return arr.sort((a, b) => {
+        let x = a[key];
+        let y = b[key];
+        if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+        else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+    });
+}
+
+output = sortJSON(json.partidos, "numero", true);
+output = sortJSON(output, "fecha", true);
+
+output.forEach(function (element, i) {
+
+    //console.log(element.Home.TeamName[0].Description)
+    const utcDate = element.fecha;
+
+    const date = new Date(utcDate);
+    const date2 = new Date();
+    //console.log(date.getDate());
+
+        // console.log(date.toLocaleString());
+        if (element.estado == 3) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">En juego</div>
+<div class="equipo-canal">
+
+    
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        } else if (element.estado == 1 || element.estado == 12) {
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}</span>
+</div>
+</div>
+<div class="fecha">${date.toLocaleString([], { day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true })}</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+        } else if (element.estado == 0) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">Finalizado</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        }
+
+
+
+        if (element.numero < 33 ) {
+        document.getElementById("col1").innerHTML += card
+    }else{
+        document.getElementById("col2").innerHTML += card
+    }
+    
+
+    
+       
+    
+
+})
+
+
+}
+
+
+function calendarioDay(json) {
+
+
+function isOdd(num) { return num % 2; }
+
+function sortJSON(arr, key, asc) {
+    return arr.sort((a, b) => {
+        let x = a[key];
+        let y = b[key];
+        if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+        else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+    });
+}
+
+output = sortJSON(json.partidos, "numero", true);
+output = sortJSON(output, "fecha", true);
+
+output.forEach(function (element, i) {
+
+    //console.log(element.Home.TeamName[0].Description)
+    const utcDate = element.fecha;
+
+    const date = new Date(utcDate);
+    const date2 = new Date();
+    //console.log(date.getDate());
+
+    if (date.getDate() == date2.getDate()) {
+        //console.log("iguales")
+
+
+        // console.log(date.toLocaleString());
+        if (element.estado == 3) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">En juego</div>
+<div class="equipo-canal">
+
+    
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        } else if (element.estado == 1 || element.estado == 12) {
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}</span>
+</div>
+</div>
+<div class="fecha">${date.toLocaleString([], { day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true })}</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+        } else if (element.estado == 0) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">Finalizado</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        }
+
+
+
+        if (isOdd(i)) {
+        document.getElementById("col2day").innerHTML += card
+    }else{
+        document.getElementById("col1day").innerHTML += card
+    }
+    }
+
+    
+       
+    
+
+})
+
+
+}
+
+
+function calendarioOct(json) {
+
+
+function isOdd(num) { return num % 2; }
+
+function sortJSON(arr, key, asc) {
+    return arr.sort((a, b) => {
+        let x = a[key];
+        let y = b[key];
+        if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+        else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+    });
+}
+
+output = sortJSON(json.partidos, "numero", true);
+output = sortJSON(output, "fecha", true);
+
+output.forEach(function (element, i) {
+
+    //console.log(element.Home.TeamName[0].Description)
+    const utcDate = element.fecha;
+
+    const date = new Date(utcDate);
+    const date2 = new Date();
+    //console.log(date.getDate());
+
+  
+        if (element.estado == 3) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">En juego</div>
+<div class="equipo-canal">
+
+    
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        } else if (element.estado == 1 || element.estado == 12) {
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}</span>
+</div>
+</div>
+<div class="fecha">${date.toLocaleString([], { day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true })}</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+        } else if (element.estado == 0) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">Finalizado</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        }
+
+
+        if (element.numero > 48 && element.numero < 57) {
+        if (element.numero < 53 ) {
+        document.getElementById("col1oct").innerHTML += card
+    }else{
+        document.getElementById("col2oct").innerHTML += card
+    }}
+    
+
+    
+       
+    
+
+})
+
+
+}
+
+function calendarioCua(json) {
+
+
+function isOdd(num) { return num % 2; }
+
+function sortJSON(arr, key, asc) {
+    return arr.sort((a, b) => {
+        let x = a[key];
+        let y = b[key];
+        if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+        else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+    });
+}
+
+output = sortJSON(json.partidos, "numero", true);
+output = sortJSON(output, "fecha", true);
+
+output.forEach(function (element, i) {
+
+    //console.log(element.Home.TeamName[0].Description)
+    const utcDate = element.fecha;
+
+    const date = new Date(utcDate);
+    const date2 = new Date();
+    //console.log(date.getDate());
+
+  
+        if (element.estado == 3) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">En juego</div>
+<div class="equipo-canal">
+
+    
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        } else if (element.estado == 1 || element.estado == 12) {
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}</span>
+</div>
+</div>
+<div class="fecha">${date.toLocaleString([], { day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true })}</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+        } else if (element.estado == 0) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">Finalizado</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        }
+
+
+        if (element.numero > 56 && element.numero < 61) {
+        if (element.numero < 59 ) {
+        document.getElementById("col1cua").innerHTML += card
+    }else{
+        document.getElementById("col2cua").innerHTML += card
+    }}
+    
+
+    
+       
+    
+
+})
+
+
+}
+
+function calendarioSem(json) {
+
+
+function isOdd(num) { return num % 2; }
+
+function sortJSON(arr, key, asc) {
+    return arr.sort((a, b) => {
+        let x = a[key];
+        let y = b[key];
+        if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+        else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+    });
+}
+
+output = sortJSON(json.partidos, "numero", true);
+output = sortJSON(output, "fecha", true);
+
+output.forEach(function (element, i) {
+
+    //console.log(element.Home.TeamName[0].Description)
+    const utcDate = element.fecha;
+
+    const date = new Date(utcDate);
+    const date2 = new Date();
+    //console.log(date.getDate());
+
+  
+        if (element.estado == 3) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">En juego</div>
+<div class="equipo-canal">
+
+    
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        } else if (element.estado == 1 || element.estado == 12) {
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}</span>
+</div>
+</div>
+<div class="fecha">${date.toLocaleString([], { day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true })}</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+        } else if (element.estado == 0) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">Finalizado</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        }
+
+
+        if (element.numero > 60 && element.numero < 63) {
+        if (element.numero < 62 ) {
+        document.getElementById("col1sem").innerHTML += card
+    }else{
+        document.getElementById("col2sem").innerHTML += card
+    }}
+    
+
+    
+       
+    
+
+})
+
+
+}
+
+function calendarioFin(json) {
+
+
+function isOdd(num) { return num % 2; }
+
+function sortJSON(arr, key, asc) {
+    return arr.sort((a, b) => {
+        let x = a[key];
+        let y = b[key];
+        if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+        else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+    });
+}
+
+output = sortJSON(json.partidos, "numero", true);
+output = sortJSON(output, "fecha", true);
+
+output.forEach(function (element, i) {
+
+    //console.log(element.Home.TeamName[0].Description)
+    const utcDate = element.fecha;
+
+    const date = new Date(utcDate);
+    const date2 = new Date();
+    //console.log(date.getDate());
+
+  
+        if (element.estado == 3) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">En juego</div>
+<div class="equipo-canal">
+
+    
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        } else if (element.estado == 1 || element.estado == 12) {
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}</span>
+</div>
+</div>
+<div class="fecha">${date.toLocaleString([], { day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true })}</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+        } else if (element.estado == 0) {
+
+            card = `<div class="mundial-row">
+<div class="equipo-container">
+
+<div class="equipo">
+
+<div>
+<img src="img/${element.local.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.local.nombre}:</span>
+<span style="float: right;">${element.marcador.local}</span>
+</div>
+<div>
+<img src="img/${element.visitante.abreviacion}.webp" style="float: left;">
+<span style="float: left;">${element.visitante.nombre}:</span>
+<span style="float: right;">${element.marcador.visitante}</span>
+</div>
+</div>
+<div class="fecha">Finalizado</div>
+<div class="equipo-canal">
+
+`;
+
+for (let index = 0; index < element.transmision.length; index++) {
+card += `<span class="logos"><img src="img/${element.transmision[index]}.png" style="float: left;"></span>`;
+
+}
+
+card += `</div> </div>`;
+
+
+        }
+
+
+        if (element.numero > 62 ) {
+        if (element.numero < 64 ) {
+            card2 = `<center><div>3° Puesto</div></center>`;
+            card2 += card
+        document.getElementById("col1fin").innerHTML += card2
+    }else{
+        card2 = `<center><div>Final</div></center>`;
+        card2 += card
+        document.getElementById("col2fin").innerHTML += card2
+    }}
+    
+
+    
+       
+    
+
+})
+
+
+}
+function standings(json){
+
+function sortJSON(arr, key, asc) {
+return arr.sort((a, b) => {
+    let x = a[key];
+    let y = b[key];
+    if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+    else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+});
+}   
+
+for (var i in json){
+
+card = `<div style="overflow-x: auto;">
+    <table>`;
+card += `
+                              <tr>
+                                <th style="text-align: left;">Grupo ${i}</th>
+                                <th style="text-align: left;">PJ</th>
+                                <th style="text-align: left;">G</th>
+                                <th style="text-align: left;">E</th>
+                                <th style="text-align: left;">P</th>
+                                <th style="text-align: left;">GF</th>
+                                <th style="text-align: left;">GC</th>
+                                <th style="text-align: left;">DG</th>
+                                <th style="text-align: left;">Pts</th>
+                              </tr>`;
+output = sortJSON(json[i], "puntos", false);
+output = sortJSON(output, "diferencia", false);
+output.forEach(function (element, i) {
+
+card += `
+                              <tr>
+                                <td style="text-align: left;"><img src="img/${element.abreviacion}.webp">${" "} ${element.nombre}</td>
+                                <td style="text-align: center;">${element.jugados}</td>
+                                <td style="text-align: center;">${element.ganados}</td>
+                                <td style="text-align: center;">${element.empatados}</td>
+                                <td style="text-align: center;">${element.perdidos}</td>
+                                <td style="text-align: center;">${element.gf}</td>
+                                <td style="text-align: center;">${element.gc}</td>
+                                <td style="text-align: center;">${element.diferencia}</td>
+                                <td style="text-align: center;">${element.puntos}</td>
+                              </tr>
+                             `;
+
+})
+card += `</table>
+                        </div>
+
+`;
+
+if(i == "A" || i == "B" || i == "C" || i == "D"){
+    document.getElementById("col1cla").innerHTML += card
+}else{
+    document.getElementById("col2cla").innerHTML += card
+}
+}
+
+}
+
+fetch("./json/partidos.json")
+            .then(response => response.json()).then(json => {
+                calendarioFin(json)
+                calendarioSem(json)
+                calendarioCua(json)
+                calendarioOct(json)
+                calendarioDay(json)
+                calendario(json)
+            })
+
+fetch("./json/standings.json")
+    .then(response => response.json()).then(json2 => {
+
+        standings(json2)
+    })
+
+setInterval(function () {
+        fetch("./json/partidos.json")
+            .then(response => response.json()).then(json => {
+                document.getElementById("col1day").innerHTML = '';
+                document.getElementById("col2day").innerHTML = '';
+                document.getElementById("col1").innerHTML = '';
+                document.getElementById("col2").innerHTML = '';
+                document.getElementById("col1oct").innerHTML = '';
+                document.getElementById("col2oct").innerHTML = '';
+                document.getElementById("col1cua").innerHTML = '';
+                document.getElementById("col2cua").innerHTML = '';
+                document.getElementById("col1sem").innerHTML = '';
+                document.getElementById("col2sem").innerHTML = '';
+                document.getElementById("col1fin").innerHTML = '';
+                document.getElementById("col2fin").innerHTML = '';
+                calendarioFin(json)
+                calendarioSem(json)
+                calendarioCua(json)
+                calendarioOct(json)
+                calendarioDay(json)
+                calendario(json)
+            })
+
+           
+        }, 3000);
+
+
+        setInterval(function () {
+     
+
+            fetch("./json/standings.json")
+                .then(response => response.json()).then(json2 => {
+                    document.getElementById("col1cla").innerHTML = '';
+                    document.getElementById("col2cla").innerHTML = '';
+                    standings(json2)
+                })
+        }, 50000);
+
+
+        function tab1(){
+            document.getElementById("tab1").style.removeProperty('display');
+            document.getElementById("tab2").style.display = "none";
+            document.getElementById("tab3").style.display = "none";
+            document.getElementById("tab4").style.display = "none";
+            document.getElementById("tab5").style.display = "none";
+            document.getElementById("tab6").style.display = "none";
+            document.getElementById("tab7").style.display = "none";
+            
+        }
+
+        function tab2(){  
+            document.getElementById("tab2").style.removeProperty('display');
+            document.getElementById("tab1").style.display = "none";
+            document.getElementById("tab3").style.display = "none";
+            document.getElementById("tab4").style.display = "none";
+            document.getElementById("tab5").style.display = "none";
+            document.getElementById("tab6").style.display = "none";
+            document.getElementById("tab7").style.display = "none";
+        }
+
+        function tab3(){  
+            document.getElementById("tab3").style.removeProperty('display');
+            document.getElementById("tab1").style.display = "none";
+            document.getElementById("tab2").style.display = "none";
+            document.getElementById("tab4").style.display = "none";
+            document.getElementById("tab5").style.display = "none";
+            document.getElementById("tab6").style.display = "none";
+            document.getElementById("tab7").style.display = "none";
+        }
+
+        function tab4(){  
+            document.getElementById("tab4").style.removeProperty('display');
+            document.getElementById("tab1").style.display = "none";
+            document.getElementById("tab2").style.display = "none";
+            document.getElementById("tab3").style.display = "none";
+            document.getElementById("tab5").style.display = "none";
+            document.getElementById("tab6").style.display = "none";
+            document.getElementById("tab7").style.display = "none";
+        }
+
+        function tab5(){  
+            document.getElementById("tab5").style.removeProperty('display');
+            document.getElementById("tab1").style.display = "none";
+            document.getElementById("tab2").style.display = "none";
+            document.getElementById("tab3").style.display = "none";
+            document.getElementById("tab4").style.display = "none";
+            document.getElementById("tab6").style.display = "none";
+            document.getElementById("tab7").style.display = "none";
+        }
+
+        function tab6(){  
+            document.getElementById("tab6").style.removeProperty('display');
+            document.getElementById("tab1").style.display = "none";
+            document.getElementById("tab2").style.display = "none";
+            document.getElementById("tab3").style.display = "none";
+            document.getElementById("tab4").style.display = "none";
+            document.getElementById("tab5").style.display = "none";
+            document.getElementById("tab7").style.display = "none";
+        }
+
+        function tab7(){  
+            document.getElementById("tab7").style.removeProperty('display');
+            document.getElementById("tab1").style.display = "none";
+            document.getElementById("tab2").style.display = "none";
+            document.getElementById("tab3").style.display = "none";
+            document.getElementById("tab4").style.display = "none";
+            document.getElementById("tab5").style.display = "none";
+            document.getElementById("tab6").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="lbl-menu">
+            <label for="radio1" onclick="tab1()">Hoy</label>
+            <label for="radio4" onclick="tab4()">Octavos</label>
+            <label for="radio5" onclick="tab5()">Cuartos</label>
+            <label for="radio6" onclick="tab6()">Semifinal</label>
+            <label for="radio7" onclick="tab7()">Final</label>
+            <label for="radio2" onclick="tab2()">Todos</label>
+            <label for="radio3" onclick="tab3()">Posiciones</label>
+        </div>
+
+        <div class="content">
+
+            <input type="radio" name="radio" id="radio1" checked >
+            <div class="tab tab1" id="tab1">
+                <div class="mundial">
+                    <div class="mundial-tabs">
+                        <div class="tab">Tab1</div>
+                        <div class="tab">Tab2</div>
+                    </div>
+                    <div class="mundial-container">
+                        <div id="col1day" class="mundial-col">
+
+                        </div>
+                        <div id="col2day" class="mundial-col">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="radio" id="radio2">
+            <div class="tab tab2" id="tab2" style="display:none;">
+                <div class="mundial">
+                    <div class="mundial-tabs">
+                        <div class="tab">Tab1</div>
+                        <div class="tab">Tab2</div>
+                    </div>
+                    <div class="mundial-container">
+                        <div id="col1" class="mundial-col">
+
+                        </div>
+                        <div id="col2" class="mundial-col">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="radio" id="radio3">
+            <div class="tab tab3" id="tab3" style="display:none;">
+                <div class="mundial">
+                    <div class="mundial-tabs">
+                        <div class="tab">Tab1</div>
+                        <div class="tab">Tab2</div>
+                    </div>
+                    <div class="mundial-container">
+                        <div id="col1cla" class="mundial-col2">
+                           
+                        </div>
+                        <div id="col2cla" class="mundial-col2">
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="radio" id="radio4">
+            <div class="tab tab4" id="tab4" style="display:none;">
+                <div class="mundial">
+                    <div class="mundial-tabs">
+                        <div class="tab">Tab1</div>
+                        <div class="tab">Tab2</div>
+                    </div>
+                    <div class="mundial-container">
+                        <div id="col1oct" class="mundial-col2">
+                           
+                        </div>
+                        <div id="col2oct" class="mundial-col2">
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="radio" id="radio5">
+            <div class="tab tab5" id="tab5" style="display:none;">
+                <div class="mundial">
+                    <div class="mundial-tabs">
+                        <div class="tab">Tab1</div>
+                        <div class="tab">Tab2</div>
+                    </div>
+                    <div class="mundial-container">
+                        <div id="col1cua" class="mundial-col2">
+                           
+                        </div>
+                        <div id="col2cua" class="mundial-col2">
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="radio" id="radio6">
+            <div class="tab tab6" id="tab6" style="display:none;">
+                <div class="mundial">
+                    <div class="mundial-tabs">
+                        <div class="tab">Tab1</div>
+                        <div class="tab">Tab2</div>
+                    </div>
+                    <div class="mundial-container">
+                        <div id="col1sem" class="mundial-col2">
+                           
+                        </div>
+                        <div id="col2sem" class="mundial-col2">
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="radio" id="radio7">
+            <div class="tab tab7" id="tab7" style="display:none;">
+                <div class="mundial">
+                    <div class="mundial-tabs">
+                        <div class="tab">3° Puesto</div>
+                        <div class="tab">Final</div>
+                    </div>
+                    <div class="mundial-container">
+                        <div id="col1fin" class="mundial-col2">
+                           
+                        </div>
+                        <div id="col2fin" class="mundial-col2">
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

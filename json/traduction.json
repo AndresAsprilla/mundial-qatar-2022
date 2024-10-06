@@ -1,0 +1,132 @@
+{
+    "equipos": {
+        "Qatar": {
+            "nombre": "Catar",
+            "abreviacion": "QAT"
+        },
+        "Ecuador": {
+            "nombre": "Ecuador",
+            "abreviacion": "ECU"
+        },
+        "Senegal": {
+            "nombre": "Senegal",
+            "abreviacion": "SEN"
+        },
+        "Netherlands": {
+            "nombre": "Pa\u00edses Bajos",
+            "abreviacion": "NED"
+        },
+        "England": {
+            "nombre": "Inglaterra",
+            "abreviacion": "ENG"
+        },
+        "Iran": {
+            "nombre": "Ir\u00e1n",
+            "abreviacion": "IRN"
+        },
+        "United States": {
+            "nombre": "Estados Unidos",
+            "abreviacion": "USA"
+        },
+        "Wales": {
+            "nombre": "Gales",
+            "abreviacion": "WAL"
+        },
+        "Argentina": {
+            "nombre": "Argentina",
+            "abreviacion": "ARG"
+        },
+        "Saudi Arabia": {
+            "nombre": "Arabia Saud\u00ed",
+            "abreviacion": "KSA"
+        },
+        "Mexico": {
+            "nombre": "M\u00e9xico",
+            "abreviacion": "MEX"
+        },
+        "Poland": {
+            "nombre": "Polonia",
+            "abreviacion": "POL"
+        },
+        "France": {
+            "nombre": "Francia",
+            "abreviacion": "FRA"
+        },
+        "Australia": {
+            "nombre": "Australia",
+            "abreviacion": "AUS"
+        },
+        "Denmark": {
+            "nombre": "Dinamarca",
+            "abreviacion": "DEN"
+        },
+        "Tunisia": {
+            "nombre": "T\u00fanez",
+            "abreviacion": "TUN"
+        },
+        "Spain": {
+            "nombre": "Espa\u00f1a",
+            "abreviacion": "ESP"
+        },
+        "Costa Rica": {
+            "nombre": "Costa Rica",
+            "abreviacion": "CRC"
+        },
+        "Germany": {
+            "nombre": "Alemania",
+            "abreviacion": "GER"
+        },
+        "Japan": {
+            "nombre": "Jap\u00f3n",
+            "abreviacion": "JPN"
+        },
+        "Morocco": {
+            "nombre": "Marruecos",
+            "abreviacion": "MAR"
+        },
+        "Croatia": {
+            "nombre": "Croacia",
+            "abreviacion": "CRO"
+        },
+        "Belgium": {
+            "nombre": "B\u00e9lgica",
+            "abreviacion": "BEL"
+        },
+        "Canada": {
+            "nombre": "Canad\u00e1",
+            "abreviacion": "CAN"
+        },
+        "Brazil": {
+            "nombre": "Brasil",
+            "abreviacion": "BRA"
+        },
+        "Serbia": {
+            "nombre": "Serbia",
+            "abreviacion": "SRB"
+        },
+        "Switzerland": {
+            "nombre": "Suiza",
+            "abreviacion": "SUI"
+        },
+        "Cameroon": {
+            "nombre": "Camer\u00fan",
+            "abreviacion": "CMR"
+        },
+        "Uruguay": {
+            "nombre": "Uruguay",
+            "abreviacion": "URU"
+        },
+        "South Korea": {
+            "nombre": "Rep\u00fablica de Corea",
+            "abreviacion": "KOR"
+        },
+        "Portugal": {
+            "nombre": "Portugal",
+            "abreviacion": "POR"
+        },
+        "Ghana": {
+            "nombre": "Ghana",
+            "abreviacion": "GHA"
+        }
+    }
+}
